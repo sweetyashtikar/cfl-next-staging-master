@@ -1,0 +1,397 @@
+/**
+* This injects Tailwind's base styles and any base styles registered by
+* plugins.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/**
+* This injects Tailwind's component classes and any component classes
+* registered by plugins.
+*/
+@tailwind components;
+
+/**
+* This injects Tailwind's utility classes and any utility classes registered
+* by plugins.
+*/
+@tailwind utilities;
+
+div.react-select__control {
+  min-height: 42px;
+}
+
+.react-select__input:focus {
+  box-shadow: none;
+}
+
+.react-select__single-value {
+  font-size: 0.875rem;
+}
+
+#ot-sdk-btn-floating {
+  display: none;
+}
+
+/**
+.slick-slide {
+    margin: 0 10px 0px 0px;
+}
+/**
+* Use this directive to control where Tailwind injects the responsive
+* variations of each utility.
+*
+* If omitted, Tailwind will append these classes to the very end of
+* your stylesheet by default.
+*/
+@tailwind screens;
+
+body {
+  zoom: 0.85;
+}
+.quill > .ql-toolbar:first-child,
+.heading-text {
+  color: #4e5d78;
+}
+.body-text {
+  color: #4e5d7899;
+}
+.ql-link {
+  display: none !important;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clippath {
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 70%);
+}
+
+.educationCard {
+  display: flex;
+}
+
+/* --------------Custom----------------- */
+
+.bgMessageBackground {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    #377dff !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04) !important;
+  backdrop-filter: blur(25px) !important;
+}
+
+.minContainer {
+  min-width: max-content;
+}
+
+.fitToContent {
+  min-width: fit-content;
+  max-width: 657px;
+}
+
+.bgSenderBackground {
+  background: linear-gradient(
+      0deg,
+      rgba(78, 93, 120, 0.03),
+      rgba(78, 93, 120, 0.03)
+    ),
+    #ffffff !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04) !important;
+  backdrop-filter: blur(25px) !important;
+}
+
+.msgWidth {
+  max-width: fit-content;
+  width: 95%;
+}
+
+.flexTo {
+  display: flex;
+}
+
+a {
+  cursor: pointer;
+}
+
+.picProfile {
+  right: -15px;
+  bottom: 35px;
+  background: white;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+li.flex.listingSideBar {
+  align-items: center;
+  justify-content: start;
+  padding: 10px 10px;
+  margin: 14px 0px;
+}
+
+span.notifyss {
+  background: #ff5630;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 57px;
+}
+
+.skilsss {
+  padding: 20px 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+li.flex.listingSideBar span {
+  margin-right: 20px;
+}
+
+.sideBar.list2 {
+  margin-top: 30px;
+}
+
+li.flex.listingSideBar:hover {
+  background: linear-gradient(0deg, #4e5d78, #4e5d78), #ffffff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.active {
+  background: linear-gradient(0deg, #4e5d78, #4e5d78), #ffffff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.active img {
+  filter: invert(1);
+}
+
+li.flex.listingSideBar:hover img {
+  filter: invert(1);
+}
+
+.covers {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 99999999;
+}
+
+.desktopSide {
+  display: block;
+}
+
+.mobileeSide {
+  display: none;
+}
+
+.focus\:ring-blue-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: none;
+  outline: none;
+}
+
+.sideBar img {
+  width: 18px;
+}
+
+.comunityImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.cominityHead {
+  margin-right: 12px;
+}
+
+.pref {
+  background: linear-gradient(
+      0deg,
+      rgba(78, 93, 120, 0.03),
+      rgba(78, 93, 120, 0.03)
+    ),
+    #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+input.inputFooter:focus {
+  outline: none !important;
+  border-color: transparent;
+  --tw-ring-color: transparent;
+  border-radius: 7px;
+  padding: 15px 24px;
+}
+
+input.inputFooter {
+  outline: none !important;
+  border-color: transparent;
+  --tw-ring-color: transparent;
+  border-radius: 7px;
+  padding: 15px 24px;
+}
+
+span.arrowss {
+  background: #0086ff;
+  padding: 21px 19px;
+  border-radius: 4px;
+}
+
+/* --------chat------------ */
+.asideChat {
+  /* border: 1px solid; */
+  border-radius: 12px;
+}
+
+.inboxChat {
+  /* border: 1px solid !important; */
+  margin-left: 25px;
+  background: white;
+  border-radius: 12px;
+}
+
+.inboxChat .divide-y > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important;
+}
+
+.youtube-preview {
+  width: 100%;
+  height: 400px;
+}
+
+/* --------------Custom----------------- */
+
+@media only screen and (max-width: 767px) {
+  .inboxChat {
+    margin-left: 0px;
+  }
+
+  .picProfile {
+    right: 18%;
+  }
+
+  .onexpandsIDE {
+    height: 600px;
+    transition: height 1s;
+  }
+
+  .expandsIDE {
+    height: 0px;
+    transition: height 1s;
+  }
+
+  .covers {
+    position: absolute;
+    right: 6px;
+    top: 0;
+    bottom: auto;
+    z-index: 99999999;
+  }
+
+  .desktopSide {
+    display: none;
+  }
+
+  .mobileeSide {
+    display: block;
+  }
+
+  .fnsizee {
+    font-size: 14px;
+  }
+
+  .educationCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobMessage {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .mobHead {
+    font-size: 22px;
+  }
+
+  .youtube-preview {
+    height: 250px;
+  }
+}
+
+.stickyAdded a.text-white {
+  color: #000000 !important;
+}
+.stickyAdded a.loginButton {
+  color: #ffffff !important;
+  background-color: #377dff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1050px) {
+  .clippath {
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0 73%);
+  }
+
+  .youtube-preview {
+    height: 300px;
+  }
+}
+
+.search-connect-btn {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    #377dff;
+}
+
+.testimonial .react-multi-carousel-dot--active button {
+  background: #fa740f !important;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+.testimonial .react-multi-carousel-dot button {
+  background: #fdc79f;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+.testimonial .react-multiple-carousel__arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 0px;
+  background: #0588ff;
+}
+.testimonial .react-multiple-carousel__arrow:hover {
+  background: #0588ff;
+}

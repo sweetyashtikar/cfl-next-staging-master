@@ -1,0 +1,17 @@
+.chatWrapper {
+  height: calc(100vh - 56px);
+}
+
+.chatsList {
+  height: calc(100vh - 170px);
+}
+
+@media (min-width: 480px) {
+  .chatWrapper {
+    height: calc(100vh - 64px);
+  }
+
+  .chatsList {
+    height: calc(100vh - 178px);
+  }
+}

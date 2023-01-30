@@ -1,0 +1,34 @@
+POST http://localhost:1337/auth/local
+Content-Type: application/json
+
+{
+  "identifier": "kasia@onevest.com",
+  "password": "100Kprofiles"
+}
+
+###
+
+GET http://localhost:1337/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU3OTk0NGE0YjQzNDAxYzAzNjAwZTJjNSIsImlhdCI6MTYzNDg0NTcwMSwiZXhwIjoxNjM3NDM3NzAxfQ.ubkgN2tXc3_1agbLCeOSS4trIGOoiWlIwqbiyRaHAFg
+
+###
+
+POST http://localhost:1337/auth/local/register
+Content-Type: application/json
+
+{
+  "email": "adi@cofounderslab.com",
+  "phone": "+40744322920",
+  "password": "qwe123"
+}
+
+###
+
+POST http://localhost:1337/auth/register-confirmation
+Content-Type: application/json
+
+{
+  "identifier": "adi@cofounderslab.com",
+  "emailToken": "25947",
+  "phoneToken": "12899"
+}
